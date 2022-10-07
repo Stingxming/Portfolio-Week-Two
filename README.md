@@ -1,1 +1,3 @@
 # Portfolio-Week-Two
+
+This is the start of my portfolio as a developer. I have only begun to build out the basic HTML structure of it but eventually it will include all of the acceptance criteria and will be styled with CSS in a unique and presentable way that is pleasing to the eye. It will also be UI and include interactive links to redirect the user from the NAV bar to the sections they desire. I intend to use this porfolio as a way to market myself to potential employers in the future!

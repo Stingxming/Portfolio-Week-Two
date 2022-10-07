@@ -6,3 +6,7 @@ body {
     background-color: black;
     color: white;
 }
+
+.header {
+    outline: solid green 2px;
+}
