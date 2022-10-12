@@ -1,12 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(0, 255, 34); 
+    --secondary: rgb(128, 0, 0);
+    --tertiary: rgb(3, 2, 2);
+    --dark: rgba(2, 2, 2, 0.418);
+    --light: white;
+}
+
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    background-color: black;
-    color: white;
+    font-family: 'poppins', sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    line-height: 1.5;
+}
+
+h1 , h2 , h3 , p {
+    margin: 0;
 }
 
 .header {
-    outline: solid green 2px;
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--tertiary);
+}
+
+.header h1 {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+}
+
+nav {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg , var(--secondary) 0% , var(--secondary) 100%);
+    background-repeat: no-repeat; 
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in; 
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+}
+
+#about-me-img {
+    height: 800px;
+    width: 800px;
+}
+
+img {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+}
+ 
+ .page-section > div {
+    flex: 0 0 77%;
+ } 
+ 
+ .page-section p {
+    margin-bottom: 20px;
+ }
+
+ .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+
+ .flex-item {
+    border: 5px solid var(--secondary);
+    /* background-color: var(--primary); */
+    color: var(--tertiary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50%-1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+ }
+
+ .flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+ }
+
+.Project-IMG-1 {
+    background-image: url("./images/black vinyl re sized.jpeg");
+}
+
+.Project-IMG-2 {
+    background-image: url( "./images/IUEF1298.JPG");
+}
+
+.Project-IMG-3 {
+    background-image: url("./images/LYEF8433.JPG");
+}
+
+.Project-IMG-4 {
+    background-image: url( "./images/WBJM9280.JPG");
+}
+
+.Project-IMG-5 {
+    background-image: url("./images/WBJM9280.JPG");
 }
